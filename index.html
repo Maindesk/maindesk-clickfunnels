@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Styled Comparison Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        table {
+            width: 80%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 25px auto;
+        }
+        th, td {
+            padding: 20px;
+        }
+        th {
+            color: white;
+        }
+        th:first-child {
+            background-color: #0B1A38;
+            border-top-left-radius: 10px;
+            text-align: left;
+        }
+        th:nth-child(2) {
+            background-color: #5555ff;  /* Title bar color for the middle column */
+            border-left: 5px solid #5555ff;  /* Left border for the middle column */
+            border-right: 5px solid #5555ff;  /* Right border for the middle column */
+        }
+        th:last-child {
+            background-color: #0B1A38;
+            border-top-right-radius: 10px;
+        }
+        td {
+            background-color: #ffffff;  /* White for feature lines */
+        }
+        td:nth-child(1) {
+            width: 40%;
+            text-align: left;
+        }
+        td:nth-child(2) {
+            text-align: center;
+            width: 30%;
+            background-color: rgba(249, 249, 255, 0.5);  /* Light grey with transparency */
+            border-left: 3px solid #5555ff;  /* Left border for the middle column */
+            border-right: 3px solid #5555ff;  /* Right border for the middle column */
+        }
+        td:nth-child(3) {
+            text-align: center;
+            width: 35%;
+        }
+        .checkmark {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #5555ff;
+            color: white;
+            text-align: center;
+            line-height: 18px;
+        }
+        .category td {
+            background-color: #F2F3F5;  /* Light grey for category rows */
+            font-weight: bold;
+        }
+      tr:last-child td:nth-child(2) {
+            border-bottom: 4px solid #5555ff;  /* Bottom border for the last row of the middle column */
+            border-bottom-left-radius: 10px;  /* Bottom left radius */
+            border-bottom-right-radius: 10px;  /* Bottom right radius */
+        }
+      
+      @media only screen and (max-width: 600px) {
+            td, th {
+                padding: 8px;
+                font-size: 12px;  /* Smaller text size */
+            }
+            td:nth-child(1) {
+                width: 40%;  /* Larger width for feature column */
+            }
+            td:nth-child(2), td:nth-child(3) {
+                width: 30%;  /* Smaller width for Product A and B columns */
+            }
+            .checkmark {
+                width: 12px;  /* Smaller checkmark */
+                height: 12px;
+                line-height: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Features Comparison</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Features</th>
+                <th>Maindesk</th>
+                <th>Clickfunnels</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="category">
+                <td>Building Pages
+</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Create Unlimited Pages
+</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Pre-Designed Templates
+</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+          <tr>
+                <td>Drag & Drop Page Builder
+</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>AI Writing Assistant
+</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td></td>
+            </tr>
+          <tr>
+                <td>Your Own Branding on Pages
+</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td></td>
+            </tr>
+          
+          <tr>
+                <td>Custom Checkout Fields
+</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>
+                  <tr>
+                <td>Custom Thank You Pages
+</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>
+                  </tr>
+                  <tr>
+                <td>Custom Domains
+</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr class="category">
+                <td>Boosting Conversions</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1 Step Checkout Process</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>
+            <tr>
+                <td>Abandoned Cart Recovery</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>
+            <tr>
+                <td>Coupons + Discounts</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr> 
+            <tr>
+                <td>A/B Testing</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>
+            <tr>
+                <td>Checkout Anywhere</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>        
+                  <tr class="category">
+                <td>Maximizing Average Order Value</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>Post-Purchase 1-Click Upsells</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Multiple Upsells</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Post-Purchase 1-Click Downsells</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Upsell Page Editor</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Pre-Purchase Order Bumps</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>      
+            </tr>
+                  <tr class="category">
+                <td>Products You Can Sell</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>Digital Products</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Physical Products</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Services</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+          </tr>
+                  <tr class="category">
+                <td>Billing Your Customers</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>1-Time Payments</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Recurring Subscriptions</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Provide Multiple Payment Options</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Weekly/Monthly/Quarterly Billing</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>      
+            </tr>
+                  <tr class="category">
+                <td>Managing Your Business</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>Sales Reporting</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Page Conversion Report</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Sales + UTM tracking</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Google Analytics</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Subscription Management</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Sales + VAT Tax Support</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            </tr>
+                  <tr class="category">
+                <td>Collecting Payments</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>Stripe</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Paypal</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Braintree</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>2Checkout</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Afterpay</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>MobilPay</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>PayU</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Paystack</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr> 
+            <tr>
+                <td>Authorize.Net</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>PayFast</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr> 
+            <tr>
+                <td>Klarna</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Twispay</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Mollie</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>  
+            <tr>
+                <td>MercadoPago</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Donations</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Cash On Delivery</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Bank Transfer</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>        
+            </tr>
+                  <tr class="category">
+                <td>Integrations</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>MailChimp</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>MailerLite</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>GetResponse</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>ActiveCampaign</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>AWeber</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Moosend</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Webhooks</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            </tr>
+                  <tr class="category">
+                <td>funnels</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>Custom Checkout</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>
+            <tr>
+                <td>A/B Split Test</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>1 Click Upsells</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Bump Offers</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Multi Directional Steps</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Goal Tracking</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Detailed Step Analytics</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            </tr>
+                  <tr class="category">
+                <td>Email Marketing</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>Email Blasting</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>
+            <tr>
+                <td>Drag & Drop Editor</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>Automation Flows</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>
+            <tr>
+                <td>Lists & Segmentation</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            <tr>
+                <td>A/B Split Test</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div 
+            </tr>
+            <tr>
+                <td>Personalization Tags</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div class="checkmark">&#10003;</div></td>
+            </tr>
+            </tr>
+                  <tr class="category">
+                <td>bookings and appointments</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>Event Creation</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>One-on-One Meetings</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Group Meetings</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Operators</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Services</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Scheduling</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Customizable Calendar</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Google Calendar Integration</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>      
+            </tr>
+                  <tr class="category">
+                <td>Quizzes & Surveys</td>
+                <td></td>
+                <td></td>
+            <tr>
+                <td>Quiz Logic</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Custom Pages Based On Results</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Step Skipping</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            <tr>
+                <td>Tagging & Tracking</td>
+                <td><div class="checkmark">&#10003;</div></td>
+                <td><div
+            </tr>
+            
+            </tr>
+            <!-- Add more rows as per your requirement -->
+        </tbody>
+    </table>
+</body>
+</html>
